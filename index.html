@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dantiago Neighbourhood Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #111;
+      --fg: #f5f5f5;
+      --muted: #888;
+      --accent: #64b5f6;
+      --card: #1c1c1c;
+      --border: #333;
+      --radius: 8px;
+    }
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #000, #222);
+      text-align: center;
+      padding: 4rem 1rem 6rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      font-weight: 600;
+      color: var(--fg);
+      text-decoration: none;
+    }
+    nav a:hover {
+      color: var(--accent);
+    }
+    .hero img {
+      width: 120px;
+      margin-bottom: 1rem;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: var(--accent);
+      color: #000;
+      font-weight: 600;
+      border-radius: var(--radius);
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #42a5f5;
+    }
+    section {
+      max-width: 1000px;
+      margin: -4rem auto 3rem;
+      padding: 0 1rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 0.5rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem 1rem;
+    }
+    .card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    .price {
+      font-weight: bold;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+    .desc {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#booking">Book</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScPc4aH8VXnh_kZIKQP8gsLX2uiP56KblZ8U5e1KC1Mf66X0w/viewform?usp=header" target="_blank">Apply</a>
+    </nav>
+    <div class="hero">
+      <img src="logo.png" alt="Dantiago Logo" />
+      <h1>Dantiago Neighbourhood Services</h1>
+      <p>Your local team for clean cars, neat lawns & tidy streets</p>
+      <a href="#booking" class="btn">Book Now</a>
+    </div>
+  </header>
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Bin Cleaning</h3>
+        <div class="price">$10</div>
+        <div class="desc">Fresh, deodorised wheelie bins every time.</div>
+      </div>
+      <div class="card">
+        <h3>Curb Number Spray</h3>
+        <div class="price">$10</div>
+        <div class="desc">Crisp and visible house numbers painted on your curb.</div>
+      </div>
+      <div class="card">
+        <h3>Leaf Blowing & Tidy-up</h3>
+        <div class="price">$10</div>
+        <div class="desc">Quick clearing of outdoor areas: patios, driveways, and paths.</div>
+      </div>
+      <div class="card">
+        <h3>Dog Walking</h3>
+        <div class="price">$5 / 30 min</div>
+        <div class="desc">Friendly neighbourhood strolls for your pup.</div>
+      </div>
+      <div class="card">
+        <h3>Garden Clean-ups</h3>
+        <div class="price">Varies</div>
+        <div class="desc">Weeding, pruning, green waste cleared—your garden refreshed.</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Lawn Mowing Options</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>🟢 Small Yard (under 100m²)</h3>
+        <div class="price">$20 – $40</div>
+        <div class="desc">Front or back only—quick, neat, efficient service.</div>
+      </div>
+      <div class="card">
+        <h3>🌿 Medium Lawn (100–300m²)</h3>
+        <div class="price">$40 – $70</div>
+        <div class="desc">Includes edging and full mow—popular for suburban homes.</div>
+      </div>
+      <div class="card">
+        <h3>🏡 Large Lawn (300–600m²+)</h3>
+        <div class="price">$70 – $120+</div>
+        <div class="desc">Big yard? No worries. We bring the serious gear.</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Car Washing Options</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>🚗 Basic Exterior Wash</h3>
+        <div class="price">$20 – $30</div>
+        <div class="desc">Quick wash, soap, rinse, dry. Great for repeat jobs or quick cleanups.</div>
+      </div>
+      <div class="card">
+        <h3>🚗✨ Exterior + Interior Clean</h3>
+        <div class="price">$40 – $60</div>
+        <div class="desc">Vacuum, windows, dash wipe—our most popular service.</div>
+      </div>
+      <div class="card">
+        <h3>🚙 SUVs / 4WDs / Vans</h3>
+        <div class="price">+ $10 – $20</div>
+        <div class="desc">Add-on for big vehicles—extra time, extra care.</div>
+      </div>
+    </div>
+  </section>
+  <section id="booking">
+    <h2>Book a Service</h2>
+    <form action="mailto:dantiago.services@gmail.com" method="POST" enctype="text/plain">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="service">Select Service</label>
+      <select name="service" required>
+        <option value="Lawn Mowing - $40">Lawn Mowing – $40</option>
+        <option value="Dog Walking - $5 per 30 min">Dog Walking – $5 / 30 min</option>
+        <option value="Bin Cleaning - $10">Bin Cleaning – $10</option>
+        <option value="Curb Spray - $10">Curb Number Spray – $10</option>
+        <option value="Leaf Blowing - $10">Leaf Blowing – $10</option>
+        <option value="Garden Clean-up (Varies)">Garden Clean-up (Varies)</option>
+        <option value="Basic Car Wash - $20–$30">Basic Car Wash – $20–$30</option>
+        <option value="Interior+Exterior - $40–$60">Interior + Exterior – $40–$60</option>
+        <option value="SUV/4WD/VAN - Extra Fee">SUV/4WD/VAN – Add $10–$20</option>
+      </select>
+
+      <label for="date">Preferred Date</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="time">Preferred Time</label>
+      <select id="time" name="time" required></select>
+
+      <input type="submit" value="Send Booking" />
+    </form>
+  </section>
+  <section id="reviews">
+    <h2>Leave a Review</h2>
+    <form action="mailto:dantiago.services@gmail.com" method="POST" enctype="text/plain">
+      <label for="review-name">Your Name</label>
+      <input type="text" id="review-name" name="Name" required>
+
+      <label for="rating">Rating</label>
+      <select id="rating" name="Rating" required>
+        <option value="⭐️">⭐️</option>
+        <option value="⭐️⭐️">⭐️⭐️</option>
+        <option value="⭐️⭐️⭐️">⭐️⭐️⭐️</option>
+        <option value="⭐️⭐️⭐️⭐️">⭐️⭐️⭐️⭐️</option>
+        <option value="⭐️⭐️⭐️⭐️⭐️">⭐️⭐️⭐️⭐️⭐️</option>
+      </select>
+
+      <label for="comments">Your Review</label>
+      <textarea id="comments" name="Review" rows="4" required></textarea>
+
+      <input type="submit" value="Submit Review" />
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 Daniel (Owner): <strong>0493 857 489</strong></p>
+    <p>📞 Teammate: <strong>0449 968 544</strong></p>
+    <p>📧 Email: <a href="mailto:dantiago.services@gmail.com">dantiago.services@gmail.com</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Dantiago Neighbourhood Services. Proudly serving Carnes Hill & Middleton Grange.
+  </footer>
+
+  <script>
+    // Booking time slot auto-updater
+    const dateInput = document.getElementById('date');
+    const timeSelect = document.getElementById('time');
+
+    dateInput.addEventListener('change', () => {
+      const selectedDate = new Date(dateInput.value);
+      const isWeekend = selectedDate.getDay() === 0 || selectedDate.getDay() === 6;
+
+      let slots = [];
+
+      if (isWeekend) {
+        for (let h = 11; h <= 17; h++) {
+          slots.push(`${h}:00`, `${h}:30`);
+        }
+        slots.push('18:00');
+      } else {
+        slots = ['15:30', '16:00', '16:30', '17:00', '17:30', '18:00'];
+      }
+
+      timeSelect.innerHTML = '';
+
+      slots.forEach(t => {
+        const [hour, minute] = t.split(':');
+        const hr = parseInt(hour);
+        const ampm = hr >= 12 ? 'PM' : 'AM';
+        const hr12 = hr % 12 || 12;
+        const label = `${hr12}:${minute} ${ampm}`;
+        const opt = document.createElement('option');
+        opt.value = t;
+        opt.textContent = label;
+        timeSelect.append(opt);
+      });
+    });
+  </script>
+
+</body>
+</html>
